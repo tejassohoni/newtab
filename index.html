@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>New Tab</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="darkstyle.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div id="selector">
+      <span id="city" onclick="refreshWeather(1)"></span>
+      &nbsp;Search Engine:
+      <select id="engine">
+        <option value="https://google.com/search?q=">Google</option>
+        <option value="https://duckduckgo.com/">DuckDuckGo</option>
+        <option value="https://bing.com/search?q=">Bing</option>
+      </select>
+    </div>
+    <div id="container">
+      <div><span id="date"></span></div>
+      <div style="margin-top: 5px">
+        <span id="time"></span>
+        <span id="temperature"></span>
+        <span id="weather-condition"></span>
+      </div>
+      <div style="height: 40px"></div>
+      <input id="searchbar" placeholder="Search" autocomplete="off" />
+      <button id="search-button" onclick="search()">Search</button>
+      <div style="height: 40px"></div>
+    </div>
+    <script src="script.js"></script>
+    <script src="weather.js"></script>
+  </body>
+</html>
