@@ -56,21 +56,6 @@ select option {
 #date {
   font-size: 24px;
 }
-#temperature {
-  font-size: 32px;
-}
-#weather-condition {
-  font-size: 24px;
-}
-#city {
-  font-size: 16px;
-}
-
-select:hover,
-#city:hover {
-  cursor: pointer;
-  text-decoration: underline;
-}
 
 #searchbar {
   width: 450px;
@@ -88,13 +73,21 @@ select:hover,
 
 #search-button {
   margin-left: 10px;
-
+  cursor: pointer;
   background-color: #6272a4;
   color: white;
   border: none;
   border-radius: 5px;
   padding: 13px 35px;
+  transition: all 0.5s ease-out;
 }
+
+
+#search-button:hover{
+	background-color: #7888b7;
+	padding: 13px 40px;
+}
+
 
 @media screen and (max-width: 1000px) {
   #container {
